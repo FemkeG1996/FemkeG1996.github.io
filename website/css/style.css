@@ -1,6 +1,44 @@
 .video {
-  width: 100vw;
-  height: 100vh; }
+  width: 100%;
+  height: auto; }
 
 .navbar {
-  background-color: #2db1de; }
+  background-color: #92c4d4; }
+
+.logo {
+  border: 2px solid #5590a5; }
+
+.foto {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #95c6d6;
+  border-radius: 50%; }
+
+.fotoC {
+  display: flex;
+  justify-content: center; }
+
+.kader {
+  color: #003c80; }
+
+.center {
+  margin-left: 10%;
+  margin-right: 10%; }
+
+.parallax {
+  background-image: url("../video/hobby.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.card {
+  background-color: #a9def0; }
+
+.rij {
+  display: flex;
+  justify-content: space-evenly; }
+
+body {
+  background-color: #f2f2f2; }
