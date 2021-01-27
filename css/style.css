@@ -95,12 +95,10 @@ footer {
   .gif {
     visibility: hidden;
     z-index: -1; }
-    .gif .spacing {
-      display: inline-block; }
-  .kader {
-    width: 500px; } }
+    .gif .kader {
+      width: 500px; } }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (max-width: 1200px) and (min-width: 1500px) {
   .gif {
     height: 400px;
     width: 400; }
