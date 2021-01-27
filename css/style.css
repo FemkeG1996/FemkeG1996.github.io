@@ -1,48 +1,108 @@
-.video {
+.bar {
   width: 100%;
-  height: auto; }
+  position: fixed;
+  top: 0;
+  background-color: rgba(44, 172, 194, 0.8);
+  color: black; }
 
-.navbar {
-  background-color: #92c4d4; }
+.nav-link {
+  color: black; }
+
+.homepage {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(255, 166, 0, 0.22), rgba(109, 90, 43, 0.3)), url(/video/sky.jpg);
+  background-repeat: no-repeat; }
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
 
 .logo {
-  border: 2px solid #5590a5; }
-
-.foto {
-  width: 200px;
-  height: 200px;
-  border: 2px solid #95c6d6;
-  border-radius: 50%; }
-
-.fotoC {
+  height: 100%;
   display: flex;
+  align-items: center;
   justify-content: center; }
 
-.kader {
-  color: #003c80; }
+.logo img {
+  height: 150px;
+  width: 150px; }
 
-.center {
-  margin-left: 10%;
-  margin-right: 10%; }
+.logo img:hover {
+  height: 250px;
+  width: 250px; }
 
-.parallax {
-  background-image: url("../video/hobby.jpg");
-  height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+.logomini {
+  width: 40px; }
 
-.card {
-  background-color: #a9def0; }
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(44, 172, 194, 0.8); }
 
 .rij {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: center; }
 
-body {
-  background-color: #f2f2f2; }
+.in {
+  color: #0070a3; }
 
-footer {
-  background-color: #92c4d4;
+.inst {
+  height: 50px;
+  width: 50px; }
+
+.gif {
+  height: 300px;
+  width: 400px;
+  margin-top: 300px;
+  border-radius: 20%;
+  border: 5px solid #156270;
+  border-collapse: collapse;
+  padding: 0px; }
+
+.spacing {
+  display: flex;
+  justify-content: space-around; }
+
+.info {
+  background: url(/video/hobby.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.kader {
+  border: 5px solid #156270;
+  width: 300px;
+  margin-top: 200px;
+  text-align: justify;
+  background-color: #0794ad;
+  color: white;
+  margin-right: 50px; }
+
+.kader2 {
+  border: 5px solid #156270;
+  margin-top: 200px;
+  text-align: justify;
+  background-color: #0794ad;
   color: white; }
+
+.color {
+  background-color: #2cacc2; }
+
+@media only screen and (max-width: 1200px) {
+  .gif {
+    visibility: hidden;
+    z-index: -1; }
+    .gif .spacing {
+      display: inline-block; }
+  .kader {
+    width: 500px; } }
+
+@media only screen and (min-width: 1500px) {
+  .gif {
+    height: 400px;
+    width: 400; }
+  .kader {
+    width: 400px; } }

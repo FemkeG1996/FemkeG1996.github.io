@@ -1,54 +1,113 @@
-.video{
-   width: 100%;
-   height: auto;
-}
-
-  .navbar{
-      background-color: rgb(146, 196, 212);
+  .bar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+  background-color: rgba(44, 172, 194,0.8);
+  color: black;
   }
-  .logo{
-    border: 2px solid rgb(85, 144, 165);
-  }
-
-.foto{
-  width: 200px;
-  height: 200px;
-  border: 2px solid rgb(149, 198, 214);
-  border-radius: 50%;
-
+.nav-link{
+  color: black;
 }
-.fotoC{
+.homepage{
+width: 100vw;
+height: 100vh;
+background-image:linear-gradient(rgba(255, 166, 0,0.22), rgba(109, 90, 43, 0.3)), url(/video/sky.jpg);
+background-repeat: no-repeat;
+}
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo{
+  height: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
-
 }
-.kader{
-  // background-color: rgb(149, 198, 214);
-color: rgb(0, 60, 128);
+.logo img{
+  height: 150px;
+  width: 150px;
 }
-.center{
-  margin-left: 10%;
-  margin-right: 10%;
+.logo img:hover{
+  height: 250px;
+  width: 250px;
 }
-.parallax {
-  background-image: url('../video/hobby.jpg');
-  height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.logomini{
+  width: 40px;
 }
-.card{
-  background-color: rgb(169, 222, 240);
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+width: 100%;
+background-color: rgba(44, 172, 194,0.8);
 }
 .rij{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+ 
 }
-body{
-  background-color: rgb(242, 242, 242);
+.in{
+  color: #0070a3  ;
 }
-footer{
-  background-color: rgb(146, 196, 212);
+.inst{
+  height: 50px;
+  width: 50px;
+}
+.gif{
+height: 300px;
+width: 400px;
+margin-top: 300px;
+border-radius: 20%;
+border: 5px solid rgb(21, 98, 112);
+border-collapse: collapse;
+padding: 0px;
+}
+.spacing{
+  display: flex;
+  justify-content: space-around;
+}
+.info{
+  background: url(/video/hobby.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.kader{
+  border: 5px solid rgb(21, 98, 112);
+  width: 300px;
+  margin-top: 200px;
+  text-align: justify;
+  background-color: rgb(7, 148, 173);
   color: white;
+  margin-right: 50px;
 }
+.kader2{
+  border: 5px solid rgb(21, 98, 112);
+  margin-top: 200px;
+  text-align: justify;
+  background-color: rgb(7, 148, 173);
+  color: white;
+ 
+}
+.color{
+  background-color: rgba(44, 172, 194,1);
+}
+@media only screen and (max-width: 1200px) {
+.gif{
+visibility: hidden;
+z-index: -1;
+.kader{
+  width: 500px;
+}
+}
+@media only screen and (min-width: 1500px) {
+  .gif{
+  height: 400px;
+  width: 400;
+  }
+  .kader{
+    width: 400px;
+  }
+
+  }
