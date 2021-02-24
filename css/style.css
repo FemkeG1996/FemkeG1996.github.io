@@ -6,7 +6,8 @@
   color: black; }
 
 .nav-link {
-  color: black; }
+  font-weight: 500;
+  color: #303030; }
 
 .homepage {
   width: 100vw;
@@ -28,18 +29,22 @@ body {
   width: 150px; }
 
 .logo img:hover {
-  height: 250px;
-  width: 250px; }
+  height: 200px;
+  width: 200px; }
 
 .logomini {
   width: 40px; }
+
+.carousel-inner {
+  height: 350px;
+  margin-top: 80px; }
 
 footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(44, 172, 194, 0.8); }
+  background-color: rgba(44, 172, 194, 0.7); }
 
 .rij {
   display: flex;
@@ -52,55 +57,39 @@ footer {
   height: 50px;
   width: 50px; }
 
-.gif {
-  height: 300px;
-  width: 400px;
-  margin-top: 300px;
-  border-radius: 20%;
-  border: 5px solid #156270;
-  border-collapse: collapse;
-  padding: 0px; }
-
-.spacing {
-  display: flex;
-  justify-content: space-around; }
-
-.info {
-  background: url(/video/hobby.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-.kader {
-  border: 5px solid #156270;
-  width: 300px;
-  margin-top: 200px;
-  text-align: justify;
-  background-color: #0794ad;
-  color: white;
-  margin-right: 50px; }
-
-.kader2 {
-  border: 5px solid #156270;
-  margin-top: 200px;
-  text-align: justify;
-  background-color: #0794ad;
-  color: white; }
-
 .color {
   background-color: #2cacc2; }
 
-@media only screen and (max-width: 1200px) {
-  .gif {
-    visibility: hidden;
-    z-index: -1; }
-    .gif .kader {
-      width: 500px; } }
+.info {
+  background-color: #ebebeb; }
 
-@media only screen and (max-width: 1200px) and (min-width: 1500px) {
-  .gif {
-    height: 400px;
-    width: 400; }
-  .kader {
-    width: 400px; } }
+.color2 {
+  background-color: rgba(44, 172, 194, 0.7); }
+
+.p {
+  font-weight: 500;
+  text-align: justify;
+  width: 400px; }
+
+.container {
+  margin-left: 20px;
+  margin-top: 80px; }
+
+.info {
+  background-image: linear-gradient(rgba(255, 166, 0, 0.22), rgba(109, 90, 43, 0.3)), url(/video/sky.jpg); }
+
+@media only screen and (max-width: 1000px) {
+  .p {
+    width: 300px; }
+  .carousel-inner {
+    margin-top: 0px; } }
+
+@media only screen and (max-width: 800px) {
+  .p {
+    width: 400px;
+    padding-left: 20px; } }
+
+.kader {
+  background-color: rgba(44, 172, 194, 0.5);
+  padding: 10px;
+  padding-bottom: 8px; }
